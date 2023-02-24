@@ -34,7 +34,9 @@ class _TaskCardState extends State<TaskCard> {
           children: [
             Expanded(
                 child: Container(
-                  child: Text(formattingDate(DateTime.parse("${widget.tache.deadline_at}") ),textAlign: TextAlign.center,style: TextStyle(fontSize: 20,color:Colors.white), ),
+                  child: widget.tache.finished_at==null ? Text(formattingDate(DateTime.parse("${widget.tache.deadline_at}") ),textAlign: TextAlign.center,style: TextStyle(fontSize: 20,color:Colors.white), )
+                   : Icon(Icons.check_circle_outlined,
+                          color: Colors.white),
             )),
             Expanded(
               flex: 3,

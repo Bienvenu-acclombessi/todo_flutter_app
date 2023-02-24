@@ -27,13 +27,14 @@ class _TaskCardState extends State<TaskCard> {
         ),
         decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),
         color:Colors.blue,
-        
+      
         ),
         child: Row(
           children: [
             Expanded(
                 child: Container(
-                 // child: Text(formattingDate(DateTime.parse("${widget.tache.deadline_at}") ),textAlign: TextAlign.center,style: TextStyle(fontSize: 20,color:Colors.white), ),
+                 child: Icon(Icons.check_circle_outlined,
+                          color: Colors.white),
             )),
             Expanded(
               flex: 3,

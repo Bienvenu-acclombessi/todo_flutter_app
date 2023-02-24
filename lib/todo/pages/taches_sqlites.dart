@@ -58,8 +58,14 @@ class _MyTachesPageSqliteState extends State<MyTachesPageSqlite>{
                           builder:
                               (BuildContext context, AsyncSnapshot snapshot) {
                             if (snapshot.data == null || snapshot.data.length==0) {
-                              return Container(
-                                child: Text('Aucune tache'),
+                              return Center(
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      child: Text('Aucune tache'),
+                                    ),
+                                  ],
+                                ),
                               );
                             } else {
                               return ListView.builder(
@@ -74,13 +80,7 @@ class _MyTachesPageSqliteState extends State<MyTachesPageSqlite>{
                         ), 
       
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => NouvelleTachePage()));
-        },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add_task),
-      ),
+     
     );
   }
 

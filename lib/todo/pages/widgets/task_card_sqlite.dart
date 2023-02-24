@@ -19,7 +19,7 @@ class _TaskCardState extends State<TaskCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 10),
+      margin: EdgeInsets.only(bottom: 10,top: 10),
       decoration: ThemeHelper().BoxDecorationShaddow(),
       child: Container(
         constraints: BoxConstraints(

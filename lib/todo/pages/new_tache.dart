@@ -31,7 +31,7 @@ class _NouvelleTachePageState extends State<NouvelleTachePage> {
   final priorityController = TextEditingController();
   final deadlineController = TextEditingController();
 
-  final format = DateFormat("yyyy-MM-dd HH:mm");
+  final format = DateFormat("yyyy-MM-dd HH:mm:ss");
   final List<Map<String, dynamic>> _items = [
     {
       'value': 'low',

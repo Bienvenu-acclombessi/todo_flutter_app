@@ -1,5 +1,6 @@
 
 import 'package:blog/screens/taches.dart';
+import 'package:blog/todo/pages/about.dart';
 import 'package:blog/todo/pages/dashbord.dart';
 import 'package:blog/todo/pages/my_tache.dart';
 import 'package:blog/todo/pages/taches_sqlites.dart';
@@ -10,6 +11,7 @@ List itemsTab = [
   {"icon": Icons.home, "size": 28.0},
   {"icon": Icons.task, "size": 22.0},
   {"icon": Icons.list_alt_sharp, "size": 22.0},
+  {"icon": Icons.info, "size": 22.0},
 ];
 class RootApp extends StatefulWidget {
   const RootApp({super.key});
@@ -26,7 +28,8 @@ class _RootAppState extends State<RootApp> {
   static  List<Widget> _widgetOptions = <Widget>[
       DashboardPage(),
       MyTachesPage(),
-      MyTachesPageSqlite()
+      MyTachesPageSqlite(),
+      AboutPage()
 
   ];
  
